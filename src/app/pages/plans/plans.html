@@ -1,0 +1,8 @@
+<h2>Our Insurance Plans</h2>
+
+<div class="plan-box" *ngFor="let p of plans">
+  <h3>{{p.planName}}</h3>
+  <p>{{p.description}}</p>
+  <p><b>Base Amount:</b> ₹{{p.baseAmt}}</p>
+  <button (click)="goToPrice(p.planId)">Calculate Premium</button>
+</div>

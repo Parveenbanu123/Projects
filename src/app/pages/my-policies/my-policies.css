@@ -1,0 +1,12 @@
+table{
+ margin:20px;
+ border-collapse:collapse;
+ width:90%;
+}
+th{
+ background:#0d6efd;
+ color:white;
+}
+td,th{
+ padding:8px;
+}

@@ -1,0 +1,28 @@
+<h2>{{plan?.planName}}</h2>
+
+<label>Enter Age:</label>
+<input type="number" [(ngModel)]="age">
+
+<label>Annual Income:</label>
+<input type="number" [(ngModel)]="income">
+
+<label>Any Health Issues?</label><br>
+
+<label>
+  <input type="radio" name="health" value="yes" [(ngModel)]="healthIssue">Yes
+</label>
+
+<label style="margin-left:15px;">
+  <input type="radio" name="health" value="no" [(ngModel)]="healthIssue">
+  No
+</label>
+
+<br><br>
+
+
+<button (click)="calculate()" [disabled]="!isValid()">Calculate Estimated Price</button>
+
+<div *ngIf="isCalculated">
+  <h3>Estimated Premium : ₹{{premium}}</h3>
+  <button (click)="buyPlan()">Buy Plan</button>
+</div>

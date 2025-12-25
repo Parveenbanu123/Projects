@@ -1,0 +1,19 @@
+<h2>My Purchased Policies</h2>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Name</th>
+    <th>Plan</th>
+    <th>Premium</th>
+    <th>Payment Mode</th>
+    <th>Frequency</th>
+  </tr>
+
+  <tr *ngFor="let p of policies">
+    <td>{{p.name}}</td>
+    <td>{{p.planName}}</td>
+    <td>₹{{p.premiumAmt}}</td>
+    <td>{{p.paymentMode}}</td>
+    <td>{{p.paymentFreq}}</td>
+  </tr>
+</table>

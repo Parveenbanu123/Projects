@@ -1,0 +1,37 @@
+{
+  "plans": [
+    {
+      "planId": 1,
+      "planName": "Care Life Plan",
+      "description": "Instant coverage with no waiting period.",
+      "baseAmt": 2500,
+      "validity": 15,
+      "id": "b896"
+    },
+    {
+      "planId": 2,
+      "planName": "Good Health Plan",
+      "description": "Air ambulance and BNPL options.",
+      "baseAmt": 2500,
+      "validity": 30,
+      "id": "10c7"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "648c",
+      "name": "Shanthosh",
+      "city": "Rasipuram",
+      "phone": "7449085045",
+      "email": "shanthosh170803@gmail.com",
+      "age": 55,
+      "paymentMode": "Credit Card",
+      "cardNumber": "1234123412341234",
+      "paymentFreq": "Half-Yearly",
+      "planId": 1,
+      "planName": "Care Life Plan",
+      "premiumAmt": 5000,
+      "validity": "2025-12-11"
+    }
+  ]
+}

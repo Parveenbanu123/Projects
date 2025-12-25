@@ -1,0 +1,22 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.text-section {
+  width: 50%;
+}
+
+.image-section img {
+  width: 400px;
+  height: auto;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
