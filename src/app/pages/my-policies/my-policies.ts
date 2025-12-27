@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InsuranceService } from '../../services/insurance';
 
@@ -13,9 +13,11 @@ export class MyPolicies implements OnInit {
 
   policies:any[] = [];
 
-  constructor(private service:InsuranceService){}
+  constructor(private service:InsuranceService,private cdr : ChangeDetectorRef){}
 
   ngOnInit(){
-    this.service.getBookings().subscribe(res => this.policies = res);
+    this.service.getBookings().subscribe(res => {this.policies = res;
+      this.cdr.detectChanges();
+    });
   }
 }
