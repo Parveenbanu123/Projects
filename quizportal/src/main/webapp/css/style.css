@@ -1,0 +1,231 @@
+/* ==============================
+   GLOBAL RESET & BASE
+   ============================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+    background: radial-gradient(circle at top left, #e0f2f1, #f1f8f6);
+    color: #1f2933;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+/* ==============================
+   HEADINGS
+   ============================== */
+h1 {
+    color: #004d40;
+    margin-bottom: 24px;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: #00695c;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+h3 {
+    color: #00796b;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/* ==============================
+   LINKS
+   ============================== */
+a {
+    color: #00897b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+/* ==============================
+   FORMS (GLASS CARD STYLE)
+   ============================== */
+form {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 28px;
+    margin-bottom: 35px;
+    border-radius: 14px;
+    max-width: 560px;
+    box-shadow: 0 12px 30px rgba(0, 77, 64, 0.15);
+    border: 1px solid rgba(0, 150, 136, 0.15);
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #004d40;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #b2dfdb;
+    font-size: 14px;
+    background: #fdfefe;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #009688;
+    box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 95px;
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+button {
+    background: linear-gradient(135deg, #009688, #26a69a);
+    color: #ffffff;
+    border: none;
+    padding: 11px 22px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00796b, #009688);
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 150, 136, 0.35);
+}
+
+/* ==============================
+   TABLES (CARD GRID STYLE)
+   ============================== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 25px;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 77, 64, 0.12);
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(135deg, #004d40, #00695c);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+td {
+    border-bottom: 1px solid #e0f2f1;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #e0f2f1;
+}
+
+/* ==============================
+   DASHBOARD LINKS
+   ============================== */
+table a {
+    margin-right: 14px;
+    font-weight: 600;
+}
+
+/* ==============================
+   QUIZ QUESTION BLOCK
+   ============================== */
+.quiz-question {
+    background: linear-gradient(135deg, #ffffff, #f1f8f6);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    border-left: 6px solid #009688;
+    box-shadow: 0 10px 22px rgba(0, 77, 64, 0.12);
+}
+
+.quiz-question p {
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #004d40;
+}
+
+/* ==============================
+   MESSAGES
+   ============================== */
+.success {
+    color: #1b5e20;
+    background: #e8f5e9;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    border-left: 5px solid #2e7d32;
+}
+
+.error {
+    color: #b71c1c;
+    background: #fdecea;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    border-left: 5px solid #c62828;
+}
+
+/* ==============================
+   FOOTER / SMALL TEXT
+   ============================== */
+hr {
+    border: none;
+    border-top: 1px dashed #b2dfdb;
+    margin: 35px 0;
+}
+
+small {
+    color: #546e7a;
+}
+
+/* ==============================
+   PAGE CONTAINER
+   ============================== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
